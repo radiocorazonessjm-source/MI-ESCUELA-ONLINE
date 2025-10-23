@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Escuela Online</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- LOGIN -->
+  <section id="login-section">
+    <h2>Iniciar sesión</h2>
+    <input id="username" placeholder="Usuario">
+    <input id="password" type="password" placeholder="Contraseña">
+    <button id="login-btn" class="btn">Entrar</button>
+  </section>
+
+  <!-- DIRECTOR -->
+  <section id="director-section" class="hidden">
+    <h2>Panel del Director: <span id="director-name"></span></h2>
+    <button id="logout-btn" class="btn">Cerrar sesión</button>
+
+    <h3>Nuevo horario</h3>
+    <select id="select-teacher"></select>
+    <button id="new-schedule" class="btn">Editar horario</button>
+
+    <h3>Todos los horarios</h3>
+    <div id="director-content"></div>
+  </section>
+
+  <!-- MAESTRO -->
+  <section id="teacher-section" class="hidden">
+    <h2>Mi escuela online</h2>
+    <h3>Horario de <span id="teacher-name"></span></h3>
+    <div id="teacher-schedule"></div>
+    <button id="logout-btn-2" class="btn">Cerrar sesión</button>
+  </section>
+
+  <!-- MODAL -->
+  <div id="modal" class="hidden">
+    <div id="modal-content">
+      <h3>Editar horario de <span id="modal-teacher"></span></h3>
+      <div id="modal-table"></div>
+      <button id="save-schedule-btn" class="btn">Guardar</button>
+      <button id="close-modal-btn" class="btn">Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+/* ===== GENERAL ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h2, h3 { color: #2c3e50; }
+.hidden { display: none; }
+
+/* ===== SECCIONES ===== */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#login-section {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+#director-section, #teacher-section {
+  background: linear-gradient(135deg, #81ecec, #74b9ff);
+  color: #2c3e50;
+}
+
+/* ===== INPUTS Y BOTONES ===== */
+input {
+  padding: 10px;
+  margin: 5px 0;
+  width: 220px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn {
+  padding: 8px 16px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Botones de colores diferentes */
+#login-btn { background: #fd79a8; color: white; }
+#login-btn:hover { background: #e84393; }
+
+#new-schedule, #save-schedule-btn { background: #00b894; color: white; }
+#new-schedule:hover, #save-schedule-btn:hover { background: #019875; }
+
+#logout-btn, #logout-btn-2 { background: #d63031; color: white; }
+#logout-btn:hover, #logout-btn-2:hover { background: #c0392b; }
+
+/* ===== DIRECTOR CARDS ===== */
+#director-content .card {
+  background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* ===== TABLAS ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  transition: background 0.3s;
+}
+
+/* Colores por columnas (días) */
+th:nth-child(2), td:nth-child(2) { background-colo
